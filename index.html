@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <title>adidas Egypt</title>
+    <link rel="icon" href="images/logo_adidas.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/adidas_logo_navbar.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active name-brand fs-2 fw-bold" aria-current="page" href="#">adidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link men-link pt-4 fw-bold" href="#">MEN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link woman-link pt-4 fw-bold" href="#">WOMAN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link kids-link pt-4 fw-bold" href="#">KIDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sport pt-4" href="#">SPORTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link life pt-4" href="#">LIFESTYLE</a>
+                        </li>
+                        <li class="nav-item dropdown mt-2">
+                            <a class="nav-link dropdown-toggle drop-sale pt-3" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                SALE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Shoes</a></li>
+                                <li><a class="dropdown-item" href="#">Clothing</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Accessories</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="font d-flex gap-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-dark" type="submit">Search</button>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
+                    </form>
+                </div><!-- /End of collapse -->
+            </div><!-- /End of container-fluid -->
+        </nav><!-- /End of nav -->
+        <!-- Login pop-up window -->
+        <div class="font modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">Email :</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="col-form-label">Password :</label>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                            <div class=" font form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"
+                                    id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Remember Me</label>
+                            </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between">
+                        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-outline-success">Login</button>
+                    </div>
+                </div><!-- /End of modal-dialog -->
+            </div>
+        </div><!-- /End of modal -->
+        </form>
+    </header><!-- /End of header -->
+
+    <main>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/MEN.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption p-3">
+                        <h5 class="fs-4 fw-bold">MEN</h5>
+                        <p>Men's sports clothing</p>
+                    </div>
+                </div> <!-- /End of carousel-item -->
+                <div class="carousel-item">
+                    <img src="images/WOMAN.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption p-3">
+                        <h5 class="fs-4 fw-bold">WOMAN</h5>
+                        <p>Women's casual clothing</p>
+                    </div>
+                </div> <!-- /End of carousel-item -->
+                <div class="carousel-item">
+                    <img src="images/KIDS.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption p-3">
+                        <h5 class="fs-4 fw-bold">KIDS</h5>
+                        <p>Casual shoes for children</p>
+                    </div>
+                </div> <!-- /End of carousel-item -->
+            </div><!-- /End of carousel-inner -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div><!-- /End of carousel -->
+    </main><!-- /End of main -->
+
+    <section>
+        <div class="jumbotron">
+            <h1 class="font welcome display-4 text-center mt-4">Welcome to the World of Adidas</h1>
+            <p class="font lead text-center">Innovation In Every Step</p>
+            <hr class="my-4">
+            <p class="font para-welcome text-center">Adidas is one of the leading global companies in the field of
+                sports apparel and
+                equipment. With
+                continuous innovation and high quality, Adidas offers the best products for athletes and sports
+                enthusiasts everywhere.</p>
+            <p class="font para-welcome text-center">Since its founding in <span
+                    class="text-danger fw-bold">1949</span>, Adidas has been
+                committed to providing the best sports
+                gear that combines
+                outstanding design and high performance. Today, the company continues its journey in supporting athletes
+                and helping them achieve their dreams.</p>
+            <div class="font d-flex justify-content-center">
+                <a class="btn btn-secondary btn-lg mb-2" href="#" role="button">Learn More</a>
+            </div>
+        </div><!-- /End of jumbotron -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="jumbotron jumbotron-fluid bg-dark mt-5 p-4 ">
+            <div class="container">
+                <h1 class="font display-4 text-light text-center"><span class="fw-bolder">adidas:</span> Performance and
+                    Style</h1>
+                <p class="font para-adidas lead text-light text-center">Explore the latest Adidas collections featuring
+                    high-performance
+                    sportswear and stylish
+                    footwear. Choose the best for yourself and achieve your athletic goals with confidence.</p>
+            </div>
+        </div><!-- /End of jumbotron -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item mt-5">
+                <h2 class="accordion-header">
+                    <button class="font accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        adidas innovation
+                    </button>
+                </h2>
+                <div id="collapseOne" class="font para-adidas accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Discover Adidas' commitment to innovation.</strong> From advanced cushioning
+                        technologies to eco-friendly materials, Adidas is constantly pushing the boundaries to enhance
+                        performance and comfort. Learn more about our cutting-edge innovations and how they can elevate
+                        your game.
+                    </div>
+                </div>
+            </div><!-- /End of accordion-item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="font accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Iconic adidas Collections
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="font para-adidas accordion-collapse collapse"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Explore Adidas' iconic collections.</strong> From the classic Superstar to the
+                        revolutionary Ultraboost, our collections have defined style and performance for decades. Find
+                        out what makes these collections stand out and why they are loved by athletes and fashion
+                        enthusiasts alike.
+                    </div>
+                </div>
+            </div><!-- /End of accordion-item -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="font accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        adidas Sustainability Efforts
+                    </button>
+                </h2>
+                <div id="collapseThree" class="font para-adidas accordion-collapse collapse"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Learn about Adidas' sustainability initiatives.</strong> At Adidas, we are dedicated to
+                        reducing our environmental impact through sustainable practices and materials. Discover our
+                        efforts in creating eco-friendly products and how we are working towards a more sustainable
+                        future.
+                    </div>
+                </div>
+            </div><!-- /End of accordion-item -->
+        </div><!-- /End of accordion -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="jumbotron jumbotron-fluid bg-dark p-4">
+            <div class="container">
+                <h1 class="font display-4 text-light text-center"><span class="fw-bolder">adidas:</span> Innovation and
+                    Comfort</h1>
+                <p class="font para-adidas lead text-light text-center">Discover the latest Adidas collections that
+                    blend innovation and
+                    comfort. Wear gear designed to meet all your athletic and everyday needs.</p>
+            </div>
+        </div><!-- /End of jumbotron -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="form-floating mt-4">
+                <textarea class="form-control" placeholder="Share your thoughts about our collection"
+                    id="floatingTextareaReview" style="height: 100px"></textarea>
+                <label for="floatingTextareaReview">Enter Your Review .........</label>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="font btn btn-dark mt-2" data-bs-toggle="modal"
+                data-bs-target="#reviewModal">Submit Review</button>
+            <!-- Modal -->
+            <div class="modal fade" id="reviewModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="reviewModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="font modal-title fs-5" id="reviewModalLabel">Review Submission</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="font modal-body">Are you sure you want to submit your review?</div>
+                        <div class="modal-footer">
+                            <button type="button" class="font btn btn-outline-danger"
+                                data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="font btn btn-outline-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /End of modal -->
+        </div><!-- /End of container-fluid -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="form-floating mt-4">
+                <textarea class="form-control" placeholder="Have any questions about our products?"
+                    id="floatingTextareaQuestion" style="height: 100px"></textarea>
+                <label for="floatingTextareaQuestion">Enter Your Question .........</label>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="font btn btn-dark mt-2" data-bs-toggle="modal"
+                data-bs-target="#questionModal">Ask Your Question</button>
+            <!-- Modal -->
+            <div class="modal fade" id="questionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="questionModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="font modal-title fs-5" id="questionModalLabel">Question Submission</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="font modal-body">Are you sure you want to ask this question?</div>
+                        <div class="modal-footer">
+                            <button type="button" class="font btn btn-outline-danger"
+                                data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="font btn btn-outline-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /End of modal -->
+        </div><!-- /End of container-fluid -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="container-fluid">
+            <div class="form-floating mt-4">
+                <textarea class="form-control" placeholder="Need help or support? Let us know!"
+                    id="floatingTextareaSupport" style="height: 100px"></textarea>
+                <label for="floatingTextareaSupport">Enter Your Support Request .........</label>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="font btn btn-dark mt-2" data-bs-toggle="modal"
+                data-bs-target="#supportModal">Request Support</button>
+            <!-- Modal -->
+            <div class="modal fade" id="supportModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="supportModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="font modal-title fs-5" id="supportModalLabel">Support Request</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="font modal-body">Do you want to submit your support request?</div>
+                        <div class="modal-footer">
+                            <button type="button" class="font btn btn-outline-danger"
+                                data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="font btn btn-outline-success">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /End of modal -->
+        </div><!-- /End of container-fluid -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="img mt-2"></div>
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="jumbotron jumbotron-fluid bg-dark pt-3 pb-3 mb-3">
+            <div class="container">
+                <h1 class="font display-4 text-center text-light">DISCOVER OUR COLLECTION</h1>
+                <p class="font fs-6 lead text-center text-light">Explore a wide range of categories including shoes,
+                    sweatshirts, T-shirts, and more for all age groups. Find the perfect outfit for you and your loved
+                    ones.</p>
+            </div>
+        </div>
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="container me-auto text-center">
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/SHOES.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">SHOP SHOES</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/SWEATT-SHIRT.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">SHOP SWEATT-SHIRT</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/T-SHIRT.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">SHOP T-SHIRT</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/TIGHTS.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">SHOP TIGHTS</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/HOODIES.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">SHOP HOODIES</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/TRAINING.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">SHOP TRAINING</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3 mb-3">
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/0-4.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">0-4 YRS</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/4-8.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">4-8 YRS</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card1 mx-auto" style="width: 18rem;">
+                        <img src="images/8-16.jpg" class="card-img-top" alt="...">
+                        <div class="font card-body z-1">
+                            <h5 class="space card-title fw-normal">8-16 YRS</h5>
+                            <a href="#" class="btn btn-outline-danger butn">SHOP NOW!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /End of container -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="img2"></div>
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="jumbotron jumbotron-fluid bg-dark pt-3 pb-3 mb-3">
+            <div class="container">
+                <h1 class="font display-4 text-center text-light">THANKS FOR</h1>
+            </div>
+        </div><!-- /End of jumbotron -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-sm-4">
+                    <div class="card card2 text-bg-dark mx-auto">
+                        <img src="images/UI_UX.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h2 class="font fw-normal fs-4 fw card-title ">James</h2>
+                            <i class="icon far fa-clock"></i>
+                            <span class="font"> July 15, 2000</span>
+                            <p class="font card-text">UI\UX</p>
+                            <div class="social-links d-flex flex-column fs-3">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp text-success"></i></a>
+                                <a href="#"><i class="fab fa-linkedin text-info"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card2 text-bg-dark mx-auto">
+                        <img src="images/WEB_DESIGNER.JPG" class="card-img" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h2 class="font fw-normal fs-4 fw card-title ">Ebrahim Elngar</h2>
+                            <i class="icon far fa-clock"></i>
+                            <span class="font"> December 23, 2005</span>
+                            <p class="font card-text">Web Designer</p>
+                            <div class="social-links d-flex flex-column fs-3">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp text-success"></i></a>
+                                <a href="#"><i class="fab fa-linkedin text-info"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="card card2 text-bg-dark mx-auto">
+                        <img src="images/PHOTOGRAPHARS.jpg" class="card-img" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h2 class="font fw-normal fs-4 fw card-title ">ESRAA</h2>
+                            <i class="icon far fa-clock"></i>
+                            <span class="font"> October 1, 2009</span>
+                            <p class="font card-text">Photographer</p>
+                            <div class="social-links d-flex flex-column fs-3">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp text-success"></i></a>
+                                <a href="#"><i class="fab fa-linkedin text-info"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /End of container -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="jumbotron jumbotron-fluid bg-dark pt-3 pb-3 mb-3">
+            <div class="container">
+                <h1 class="font display-4 text-center text-light">Discover Our Collections</h1>
+            </div>
+        </div><!-- /End of jumbotron -->
+    </section><!-- /End of section -->
+
+    <section>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-sm-12">
+                    <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row g-0 cc">
+                            <div class="col-md-4 up-photo overflow-hidden">
+                                <img src="images/one.jpg" class="img-fluid rounded-start photo" alt="...">
+                            </div>
+                            <div class="font col-md-8">
+                                <div class="card-body">
+                                    <h2 class="card-title">Explore the Latest Trends.</h2>
+                                    <p class="card-text fs-5">Stay ahead of the fashion curve with our exclusive
+                                        collection.
+                                        From classic pieces to the latest trends, find everything you need to elevate
+                                        your style. Our designers have carefully curated each item, ensuring that every
+                                        piece not only looks great but also feels comfortable. Whether you're looking
+                                        for something casual or a bit more formal, our collection offers a wide range of
+                                        options that cater to all tastes. Explore now and find the perfect addition to
+                                        your wardrobe that will make you stand out in any crowd. Discover the
+                                        versatility of our designs, perfect for both day and night, and enjoy the
+                                        confidence that comes with knowing you're wearing the best. We believe that
+                                        fashion should not only look good but also feel good, and our collection is a
+                                        testament to that philosophy. Every piece is crafted with precision and care,
+                                        ensuring that you receive a product that will last for seasons to come. Embrace
+                                        the latest trends and make them your own with our unparalleled selection of
+                                        stylish and comfortable clothing.</p>
+                                    <div class="links-card">
+                                        <a href="#" class="link-card"><i class="fas fa-plus-circle"
+                                                style="color: #FF6347;"></i> <span style="color: #FF6347;">New
+                                                Arrivals</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-ruler"
+                                                style="color: #32CD32;"></i> <span style="color: #32CD32;">Size
+                                                Guide</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-gift"
+                                                style="color: #FF69B4;"></i> <span style="color: #FF69B4;">Buy Gift
+                                                Cards</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12">
+                    <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row g-0 cc">
+                            <div class="col-md-8">
+                                <div class="font card-body">
+                                    <h2 class="card-title">Discover Our Best Sellers.</h2>
+                                    <p class="card-text fs-5">Our top picks, loved by thousands. Explore the items that
+                                        everyone is talking about, and find out why they are so popular among our
+                                        customers. These best sellers have been tried and tested by countless satisfied
+                                        shoppers, and each one has earned its place in our top-rated collection. From
+                                        high-quality materials to impeccable craftsmanship, these items represent the
+                                        very best of what we have to offer. Whether you're shopping for yourself or
+                                        looking for the perfect gift, our best sellers are a reliable choice that won't
+                                        disappoint. Each product in our best-seller collection is a reflection of the
+                                        trust and satisfaction that our customers place in us. With a variety of options
+                                        that cater to different tastes and preferences, our best sellers offer something
+                                        for everyone. Experience the quality and style that have made these items our
+                                        top choices and discover why they continue to be favorites season after season.
+                                        By choosing from our best sellers, you are not just purchasing a product but
+                                        becoming part of a community of discerning shoppers who value quality and style
+                                        above all else.</p>
+                                    <div class="links-card">
+                                        <a href="#" class="link-card"><i class="fas fa-plus-circle"
+                                                style="color: #FF6347;"></i> <span style="color: #FF6347;">New
+                                                Arrivals</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-ruler"
+                                                style="color: #32CD32;"></i> <span style="color: #32CD32;">Size
+                                                Guide</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-gift"
+                                                style="color: #FF69B4;"></i> <span style="color: #FF69B4;">Buy Gift
+                                                Cards</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 up-photo overflow-hidden">
+                                <img src="images/two.jpg" class="img-fluid rounded-start photo" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12">
+                    <div class="card mb-3" style="max-width: 100%;">
+                        <div class="row g-0 cc">
+                            <div class="col-md-4 up-photo overflow-hidden">
+                                <img src="images/three.jpg" class="img-fluid rounded-start photo" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="font card-body">
+                                    <h2 class="card-title">Seasonal Favorites.</h2>
+                                    <p class="card-text fs-5">Get ready for the season with our specially curated
+                                        collection.
+                                        Whether it's summer vibes or winter warmth, we have the perfect outfit waiting
+                                        for you. Each season brings a new wave of inspiration, and our seasonal
+                                        favorites reflect the latest trends and timeless styles that are perfect for any
+                                        occasion. From light and breezy fabrics in the summer to cozy knits in the
+                                        winter, our collection ensures you're dressed appropriately and stylishly, no
+                                        matter the weather. Discover pieces that complement the season and enhance your
+                                        wardrobe. Our seasonal collection is more than just clothing; it is a
+                                        celebration of the changing times and the beauty of adapting your style to suit
+                                        the moment. Each piece is designed to help you transition seamlessly from one
+                                        season to the next, combining practicality with style. Whether you're updating
+                                        your wardrobe or starting fresh, our seasonal favorites are sure to become
+                                        staples that you return to time and time again. Enjoy the comfort, warmth, and
+                                        style that our collection brings, making every season a chance to express
+                                        yourself in new and exciting ways.</p>
+                                    <div class="links-card">
+                                        <a href="#" class="link-card"><i class="fas fa-plus-circle"
+                                                style="color: #FF6347;"></i> <span style="color: #FF6347;">New
+                                                Arrivals</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-ruler"
+                                                style="color: #32CD32;"></i> <span style="color: #32CD32;">Size
+                                                Guide</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-gift"
+                                                style="color: #FF69B4;"></i> <span style="color: #FF69B4;">Buy Gift
+                                                Cards</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12">
+                    <div class="card" style="max-width: 100%;">
+                        <div class="row g-0 cc">
+                            <div class="col-md-8">
+                                <div class="font card-body">
+                                    <h2 class="card-title">Limited Edition Collections.</h2>
+                                    <p class="card-text fs-5">Don't miss out on our limited edition collections. Unique
+                                        designs and exclusive items that you won't find anywhere else, crafted just for
+                                        you. These limited editions are made in small quantities, so once they're gone,
+                                        they're gone for good. This makes them not only rare but also highly coveted by
+                                        fashion enthusiasts and collectors alike. Each piece is designed with attention
+                                        to detail and a commitment to quality, ensuring that you receive a product that
+                                        is both beautiful and durable. Act fast to secure your piece of fashion history
+                                        before it's too late. Owning a piece from our limited edition collection is more
+                                        than just a purchase; it's an investment in something truly special. These
+                                        pieces are often inspired by art, culture, and the world around us, bringing
+                                        together unique perspectives in wearable form. Whether you're looking for
+                                        something to wear for a special occasion or simply want to add a one-of-a-kind
+                                        piece to your collection, our limited editions are the perfect choice.
+                                        Experience the thrill of owning something that few others have and take pride in
+                                        knowing that your fashion choices are as unique as you are.</p>
+                                    <div class="links-card">
+                                        <a href="#" class="link-card"><i class="fas fa-plus-circle"
+                                                style="color: #FF6347;"></i> <span style="color: #FF6347;">New
+                                                Arrivals</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-ruler"
+                                                style="color: #32CD32;"></i> <span style="color: #32CD32;">Size
+                                                Guide</span></a>
+                                        <a href="#" class="link-card"><i class="fas fa-gift"
+                                                style="color: #FF69B4;"></i> <span style="color: #FF69B4;">Buy Gift
+                                                Cards</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 up-photo overflow-hidden">
+                                <img src="images/four.jpg" class="img-fluid rounded-start photo" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /End of container -->
+    </section><!-- /End of section -->
+
+    <footer class="footer_Adidas">
+        <div class="container">
+            <div class="footer-container row flex-column flex-sm-row">
+                <div class="col-12  mt-5 mb-5">
+                    <hr class="footer-divider text-light">
+                </div>
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">PRODUCTS</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">Shoes</a></li>
+                            <li><a href="#" class="link-footer text-light">Clothing</a></li>
+                            <li><a href="#" class="link-footer text-light">Accessories</a>
+                            </li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">SPORTS</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">Running</a></li>
+                            <li><a href="#" class="link-footer text-light">Basketball</a></li>
+                            <li><a href="#" class="link-footer text-light">Football</a></li>
+                            <li><a href="#" class="link-footer text-light">Yoga</a></li>
+                            <li><a href="#" class="link-footer text-light">Outdoor</a></li>
+                            <li><a href="#" class="link-footer text-light">Tennis</a></li>
+                            <li><a href="#" class="link-footer text-light">Training</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">Category</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">Men</a></li>
+                            <li><a href="#" class="link-footer text-light">Women</a></li>
+                            <li><a href="#" class="link-footer text-light">Kids</a></li>
+                            <li><a href="#" class="link-footer text-light">Outlet</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font fs-3 text-light add-footer">COMPANY INFO</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">About Us</a></li>
+                            <li><a href="#" class="link-footer text-light">Careers</a></li>
+                            <li><a href="#" class="link-footer text-light">Carbon Footprint</a></li>
+                            <li><a href="#" class="link-footer text-light">Press</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col collapsible-xs">
+                    <div class="content-asset">
+                        <h2><a class="title font text-light fs-3 add-footer">SUPPORT</a></h2>
+                        <ul class="menu-footer content">
+                            <li><a href="#" class="link-footer text-light">Help</a></li>
+                            <li><a href="#" class="link-footer text-light">Shipping</a></li>
+                            <li><a href="#" class="link-footer text-light">Returns</a></li>
+                            <li><a href="#" class="link-footer text-light">adiClub & Newsletter</a></li>
+                            <li><a href="#" class="link-footer text-light">Vouchers</a></li>
+                            <li><a href="#" class="link-footer text-light">Size Charts</a></li>
+                            <li><a href="#" class="link-footer text-light">Contact Us</a></li>
+                            <li><a href="#" class="link-footer text-light">Accessibility</a></li>
+                            <li><a href="#" class="link-footer text-light">Storefinder</a></li>
+                        </ul><!-- /End of menu-footer -->
+                    </div><!-- /End of content-asse -->
+                </div><!-- /End of footer-item -->
+                <div class="footer-item col">
+                    <div class="content-asset">
+                        <div class="social-media-links">
+                            <h2><a class="title text-light fs-3 add-footer">FOLLOWUS</a></h2>
+                            <ul class="menu-footer content">
+                                <li><a href="#"><i class="fab fa-facebook text-light fs-4"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram text-light fs-4"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube text-light fs-4"></i></a></li>
+                            </ul><!-- /End of menu-footer -->
+                        </div><!-- /End of social-media-links -->
+                    </div><!-- /End of content-asset -->
+                </div><!-- /End of footer-item -->
+            </div>
+    </footer>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
